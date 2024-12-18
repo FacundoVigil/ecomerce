@@ -1,13 +1,11 @@
+//import { Link } from "react-router-dom"
 
 import ItemCount from "../ItemCount/ItemCount"
 export default function ItemDetail({ id, name, img, description, category, price, stock }) {
-    const handleAdd = (cantidad) => {
-        const objectToAdd = {
-            id, name, price, cantidad
-        }
-        console.log(objectToAdd)
-    } 
-    return ( 
+    const handleAdd = () => {
+        console.log(id)
+    }
+    return (
         <div className="container">
             <h2>{name}</h2>
             <div className="card">
